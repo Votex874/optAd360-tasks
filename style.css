@@ -26,3 +26,16 @@ body{
     height: 300px;
     z-index: 11;
 }
+.box span {
+    width: 80%;
+    height: 80%;
+    line-height: 240px;
+    text-align: center;
+    display: block;
+}
+.containerBtns{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
