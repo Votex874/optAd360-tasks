@@ -4,32 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="app.js"></script>
 
 </head>
 <body>
+<div class="disableAll">
 
+</div>
+<div class="box">
+    <span>GDPR consent</span>
+    <div class="containerBtns">
+        <button class="accept">Accept</button>
+        <button class="cancel">Cancel</button>
+    </div>
+</div>
 <div class="task">
-    <p>
-    <h2>1.</h2>
+    <div>
+        <h3>1.</h3>
+        <span>
         Var - używamy do zadeklarowania zmiennej. Nieważne w którym miejscu ją zadeklarujemy będzie ona dostępna w całej funkcji . <br/>
         Let - jest to nowość wprowadzona w specyfikacji ES6, również tym słowem deklarujemy zmienna. <br/>
         Główną różnicą między let a var jest zakres blokowy zmiennej , która została zadeklarowana za pomocą let.<br/>
-    </p>
-    <p>
-    <h2>2.</h2>
-    Czy można tworzyć własne eventy w Javascript (eventy takie jak load, scroll etc)?<br/>
-    Tak można tworzyć własne eventy, między innymi takie jak click, mouseover, mouseout , keyPress. <br/>
-    </p>
-    <p>
-    <h2>3.</h2>
-    Webpack jest builderem dla naszej aplikacji. Jego celem jest połączenie wszystkich naszych plików , które tworzą dany projekt (JS, CSS, SASS) w paczkę którą można wysłać przeglądarce.
-    Zwiększa on wydajność bo na strone trafia tylko jeden plik. Różnicą jest to , że npm jest meneżdzerem pakietów. Zadaniem npm jest poprawne uruchomienie innego programu poprzez dopasowanie danego programu pod naszą aplikacje.
-    Przykładowo chcemy użyć kalendarza airbnb , pobieramy kalendarz za pomocą paczki npm.
-    </p>
+        </span>
+    </div>
+    <div>
+        <h3>2.</h3>
+        <span>
+            Czy można tworzyć własne eventy w Javascript (eventy takie jak load, scroll etc)?<br/>
+            Tak można tworzyć własne eventy, między innymi takie jak click, mouseover, mouseout , keyPress. <br/>
+        </span>
+    </div>
+    <div>
+        <h3>3.</h3>
+        <span>
+            Webpack jest builderem dla naszej aplikacji. Jego celem jest połączenie wszystkich naszych plików , które tworzą dany projekt (JS, CSS, SASS) w plik wyjściowy który można wysłać przeglądarce.
+            Zwiększa on wydajność bo na strone trafia tylko jeden plik.  Zadaniem npm jest poprawne uruchomienie innego programu poprzez dopasowanie danej paczki pod naszą aplikacje.
+            (Przykładowo chcemy użyć kalendarza airbnb , pobieramy kalendarz za pomocą paczki npm.) Npm jest zbiorem paczek , które możemy bezspośrednio użyc w naszym projekcie. Webpack składa nasze wszystkie pliki w jeden wyjściowy.
+        </span>
+    </div>
+    <div>
+        <h3>4.</h3>
+        <span>
+          Różnicą między atrybutem async a defer jest moment wczytania scriptu. W przypadku async script pobiera się nie zatrzymując wczytywania  treści pliku html. W momencie pobrania się
+          scriptu przerywa on wczytywanie  pliku html i zaczyna wczytywać script. Dopiero po wczytaniu się całego scriptu wznawia się wczytywanie pliku html. Znacznik defer działa podobnie jak znacznik async pobiera się również w momencie
+            wczytywania pliku html i go nie zatrzymuje. Jednak wczytywanie samego scriptu następuje po zakończeniu wczytywania się całego pliku html.
+        </span>
+    </div>
 
 </div>
 
 
-<script src="app.js"></script>
+
 </body>
 </html>
